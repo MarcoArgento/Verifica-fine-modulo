@@ -19,7 +19,6 @@ function showLogin() {
 }
 
 function showUser() {
-  input.value = "";
   btn.disabled = true;
   localStorage.windowLog = "welcome";
   date = new Date();
@@ -64,6 +63,8 @@ function showUser() {
     "Numero accessi: " + localStorage.qty;
   document.getElementById("lastAcc").innerHTML =
     "Ultimo accesso: " + localStorage.lastAcc;
+
+  input.value = "";
 }
 
 function DisAbi() {
